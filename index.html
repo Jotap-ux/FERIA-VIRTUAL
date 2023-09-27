@@ -96,8 +96,8 @@
                         </div>
 
                         <!--Aca se pone el boton de inicio de sesion y de registro-->
-                        <button class="btn btn-success px-3 mr-2" routerLink="/">Iniciar Sesión</button>
-                        <button class="btn btn-success px-3">Registrarme</button>
+                        <button id="boton-iniciosesion" class="btn btn-success px-3 mr-2">Iniciar Sesión</button>
+                        <button id="boton-registrarse" class="btn btn-success px-3">Registrarme</button>
 
                     </div>
                 </nav>
@@ -386,6 +386,32 @@
 
     <!-- BOTON PARA VOLVER ARRIBA -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!--SCRIPTS DE BOTONES-->
+    <script>
+
+        // Obtén una referencia al botón por su ID
+        var boton = document.getElementById("boton-iniciosesion");
+      
+        // Agrega un evento cuando se le de click al botón
+        boton.addEventListener("click", function() {
+          // Redirecciona a la página de inicio de sesion
+          window.location.href = "inicio_de_sesión.html";
+        });
+    </script>
+    <script>
+
+        // Obtén una referencia al botón por su ID
+        var boton = document.getElementById("boton-registrarse");
+      
+        // Agrega un evento cuando se le de click al botón
+        boton.addEventListener("click", function() {
+          // Redirecciona a la página de inicio de sesion
+          window.location.href = "Registrarse.html";
+        });
+    </script>
+      
+    <!-------------------------------------------------->
 
 
     <!-- LIBRERIAS PARA PODER USAR BOOSTRAP -->
