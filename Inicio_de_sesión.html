@@ -109,17 +109,27 @@
 
     
     <!--ACA VA EL CONTENIDO DE LA PAGINA-->
-
-    <form class="mb-30" action="">
-        <div class="input-group">
-            <input type="text" class="form-control border-0 p-4" placeholder="Coupon Code">
-            <div class="input-group-append">
-                <button class="btn btn-primary">PROBANDO</button>
+    
+    <div class="container-fluid bg-dark mt-5 custom-container"> <!-- Aplica la clase personalizada al contenedor -->
+        <div class="row justify-content-center align-items-center"> <!-- Centra el contenido vertical y horizontalmente -->
+            <div class="col-md-9"> <!-- Utiliza un ancho de un tercio de la pantalla en dispositivos medianos y más grandes -->
+                <form class="mb-4" action="">
+                    <h2 class="text-white text-center mb-3 mt-5">INICIAR SESIÓN</h2> <!-- Título del formulario centrado -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-white">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="inputPassword5" class="form-label text-white">Contraseña</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn btn-success btn-block mb-5">Iniciar sesión</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </form>
-
-
+    </div>
     <!---->
 
     <!-- BOTON PARA VOLVER ARRIBA -->
@@ -166,7 +176,7 @@
 </body>
 
 <footer>
-    <div class="container-fluid bg-dark text-white pt-5 ">
+    <div class="container-fluid bg-dark text-white pt-5 mt-5 ">
         <div class="row justify-content-center px-xl-5">
             <a href="#" class="text-white mb-5">© 2004 Maipo Grande. Todos los Derechos Reservados. </a>
         </div>

@@ -9719,3 +9719,9 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 0px;
 }
 
+/*-----------------------------------------------------*/
+
+.custom-container {
+  max-width: 40% ; /* Establece el ancho deseado (dos tercios del ancho) */
+  margin: 0 auto; /* Centra el contenedor horizontalmente  66.66667% */
+}
