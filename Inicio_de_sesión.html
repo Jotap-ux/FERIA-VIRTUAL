@@ -26,6 +26,7 @@
 
     <!-- LINKEO A LA PAGINA DE ESTILOS CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 
@@ -177,6 +178,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- MODALES? -->
+    <script>
+        const myModal = document.getElementById('exampleModal');
+        const myInput = document.getElementById('myInput');
+      
+        myModal.addEventListener('shown.bs.modal', () => {
+          myInput.focus();
+        });
+    </script>
 </body>
 
 <footer>
