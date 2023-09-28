@@ -28,8 +28,8 @@
     <!-- Incluye los estilos de Bootstrap (CSS) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
 
-<!-- Incluye el JavaScript de Bootstrap (JS) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+    <!-- Incluye el JavaScript de Bootstrap (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
 
 
     <!-- LINKEO A LA PAGINA DE ESTILOS CSS -->
@@ -105,7 +105,9 @@
 
                         <!--Aca se pone el boton de inicio de sesion y de registro-->
                         <button id="boton-iniciosesion" class="btn btn-success px-3 mr-2">Iniciar Sesión</button>
-                        <button id="boton-registrarse" class="btn btn-success px-3">Registrarme</button>
+                        <button type="button" class="btn btn-success px-3" data-bs-toggle="modal" data-bs-target="#modal-registro">
+                            Registrarse
+                        </button>
 
                     </div>
                 </nav>
@@ -117,54 +119,32 @@
 
     
     <!--ACA VA EL CONTENIDO DE LA PAGINA-->
-    <!--FORMULARIO DE INICIO DE SESIÓN-->
-    <div class="container-fluid bg-dark mt-5 custom-container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9">
-                <form class="mb-4" action="">
-                    <h2 class="text-white text-center mb-3 mt-5">INICIAR SESIÓN</h2>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" minlength="5" maxlength="20" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="inputPassword5" class="form-label text-white">Contraseña</label>
-                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Ingresa tu contraseña" minlength="8" maxlength="8" required>
-                        <!-- El atributo minlength establece la longitud mínima -->
-                        <a href="#" class="nav-item nav-link text-primary text-center mt-3">Olvidé mi contraseña</a>
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn btn-success btn-block mb-5">Iniciar sesión</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
     
     <!--PROBANDO MODAL-->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-    </button>
-  
+    
+    
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-registro" tabindex="-1" aria-labelledby="modal-registroLabel" aria-hidden="true">
         <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-registroLabel">REGISTRO</h5>
+                    <button type="button" class="btn btn-danger ml-3" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+                <div class="modal-body">
+                    Tipo de perfil solicitado
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success">Cliente</button>
+                    <button type="button" class="btn btn-success">Productor</button>
+                    <button type="button" class="btn btn-success">Transportista</button>
+                </div>
             </div>
-            <div class="modal-body">
-            ...
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
+            
         </div>
     </div>
+  
+    
     
     <!---->
 
@@ -213,12 +193,13 @@
 
     <!-- MODALES? -->
     <script>
-    const myModal = document.getElementById('exampleModal');
+    const myModal = document.getElementById('modal-registro');
     const myInput = document.getElementById('myInput');
   
     myModal.addEventListener('shown.bs.modal', () => {
       myInput.focus();
     });
+
     </script>
   </body>
   
@@ -231,3 +212,5 @@
         </div>
     </div>
 </footer>
+
+</html>
