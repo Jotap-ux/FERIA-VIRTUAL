@@ -9733,10 +9733,13 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.body-iniciosesion {
+.fondo-fruta {
   background-image: url("../img/fondoverdura.jpg");/* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta correcta de tu imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
 }
 
+.color-menu{
+  color: white;
+}
