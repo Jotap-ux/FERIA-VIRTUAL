@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Icono de la pestaña de la pagina -->
-    <link href="img/logo_v3.png" rel="icon">
+    <link href="img/logo_v3.png" rel="icon" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <!-- Para poder cargar las fuentes de Google Web Fonts en tu página web, lo que te permite utilizar la fuente
@@ -66,6 +66,7 @@
         </div>
     </div>
     <!-- Fin de la primera barra de navegacion -->
+
 
     <!-- BARRA DE NAVEGACIÓN -->
     <div class="container-fluid bg-dark mb-30" style="margin-bottom: 0;">
@@ -152,36 +153,144 @@
             </div>
         </div>
     </div>
-
-
     
-    <!--ACA VA EL CONTENIDO DE LA PAGINA-->
-    <!--FORMULARIO DE INICIO DE SESIÓN-->
-    <div class="container-fluid bg-dark mt-5 custom-container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9">
-                <form class="mb-4" action="">
-                    <h2 class="text-white text-center mb-3 mt-5">INICIAR SESIÓN</h2>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Correo electrónico</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" minlength="5" maxlength="20" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="inputPassword5" class="form-label text-white">Contraseña</label>
-                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Ingresa tu contraseña" minlength="8" maxlength="8" required>
-                        <!-- El atributo minlength establece la longitud mínima -->
-                        <a href="#" class="nav-item nav-link text-success text-center mt-3">Olvidé mi contraseña</a>
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn btn-success btn-block mb-5">Iniciar sesión</button>
-                    </div>
-                </form>
+
+    <!--NAVEGAR EN LA PAGINA-->
+    <div class="container-fluid mt-3">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="index.html">Inicio</a>
+                    <span class="breadcrumb-item active">Registro de Productor</span>
+                </nav>
             </div>
         </div>
     </div>
-    
-    
-    <!---->
+    <!------------------------>
+
+    <!--ACA VA TODO EL FORMULARIO DE REGISTRO-->
+
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-lg-8 mx-auto">
+                <h5 class="section-title position-relative text-uppercase mb-3 text-center"><span class="bg-secondary pr-3">Registro Productor</span></h5>
+                <div class="bg-light p-30 mb-5">
+                    <div class="row">
+
+                        <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
+                        <div class="col-12">
+                            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-light pr-3">Personal</span></h5>
+                        </div>
+                        <!-------------------SON DE 4 EN 4---------->
+                        <div class="col-md-6 form-group">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Apellido</label>
+                            <input class="form-control" type="text" placeholder="Ingrese su apellido">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Numero de identificación</label>
+                            <input class="form-control" type="text" placeholder="00.000.000-x">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Fecha de Nacimiento</label>
+                            <input class="form-control" type="date" placeholder="00/00/00">
+                        </div>
+                        <!--------------------------------------------------->
+                        <!--PALABRA PARA SEPARAR-->
+                        <div class="col-12">
+                            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-light pr-3">Domicilio Tributario</span></h5>
+                        </div>
+                        <!------------------------------------------------------>
+                        <div class="col-md-6 form-group">
+                            <label>Dirección</label>
+                            <input class="form-control" type="text" placeholder="Ingrese la calle y el número">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Comuna</label>
+                            <input class="form-control" type="text" placeholder="Ingrese la comuna">
+                        </div>                        
+                        <div class="col-md-6 form-group">
+                            <label>Región</label>
+                            <input class="form-control" type="text" placeholder="Ingrese la región">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>País</label>
+                            <input class="form-control" type="text" placeholder="Ingrese el país">
+                        </div>
+                        <!--PALABRA PARA SEPARAR-->
+                        <div class="col-12">
+                            <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-light pr-3">Correo</span></h5>
+                        </div>
+                        <!------------------------------------------------------>
+                        <div class="col-md-6 form-group">
+                            <label>Correo Electrónico</label>
+                            <input class="form-control" type="email" placeholder="Ingrese su email">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Confirme su Correo Electrónico</label>
+                            <input class="form-control" type="email" placeholder="Ingrese su email">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Contraseña</label>
+                            <input class="form-control" type="password" placeholder="Ingrese su contraseña">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Confirme su Contraseña</label>
+                            <input class="form-control" type="password" placeholder="Ingrese su contraseña">
+                        </div>
+
+                        <div class="col-12 text-center mt-4 mb-2">
+                            <button type="button" class="btn btn-success btn-lg mb-1" data-bs-toggle="modal" data-bs-target="#modal-registro-productor">
+                                Registrarse
+                            </button>
+                        </div>
+                    </div>
+                </div>              
+            </div>            
+        </div>
+    </div>
+    <!-- FIN FORMULARIO DE REGISTRO -->
+
+    <!--2DOS MODALES-->
+    <!--MODAL PARA ACEPTAR TERMINOS Y CONDICIONES-->
+
+    <div class="modal fade" id="modal-registro-productor" tabindex="-1" aria-labelledby="modal-registro-productorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-registro-productorLabel">TERMINOS Y CONDICIONES</h5>
+                </div>
+                <div class="modal-body">
+                    Acepta los términos y condiciones para poder registrarse en la pagina web como Productor.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" id="btnAceptarProductor">Si</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">No</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--MODAL PARA AVISAR QUE QUEDASTE REGISTRADO O ALGO-->
+    <div class="modal fade" id="modal-aviso-productor" tabindex="-1" aria-labelledby="modal-aviso-productorLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-aviso-productorLabel">REGISTRO</h5>
+                </div>
+                <div class="modal-body">
+                    Usted se ha registrado correctamente!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-success" id="btnAceptar2Productor" aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------>
 
     <!-- BOTON PARA VOLVER ARRIBA -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -221,6 +330,20 @@
         });
     </script>
 
+    <!---NUEVOS MODALES-->
+     <!--SCRIPT DE BOTON ACEPTAR TERMINOS Y CONDICIONES-->
+     <script>
+        document.getElementById('btnAceptarProductor').addEventListener('click', function () {
+            $('#modal-aviso-productor').modal('show');
+        });
+    </script>
+
+    <!--Modal para recargar todo cuando se de en aceptar-->
+    <script>
+        document.getElementById("btnAceptar2Productor").addEventListener("click", function() {
+            location.reload(); // Recargar la página cuando se hace clic en el botón "No"
+        });
+    </script>
     <!-------------------------------------------------->
 
 
@@ -237,10 +360,14 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+   
     <!-- MODALES? -->
     <script>
     const myModal = document.getElementById('modal-registro');
     const myInput = document.getElementById('myInput');
+    
+    
+  
     
     myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus();
@@ -250,9 +377,13 @@
 </body>
 
 <footer>
-    <div class="container-fluid bg-dark text-white pt-5 mt-5 ">
+    <div class="container-fluid bg-dark text-white pt-5 ">
         <div class="row justify-content-center px-xl-5">
             <a href="#" class="text-white mb-5">© 2004 Maipo Grande. Todos los Derechos Reservados. </a>
         </div>
     </div>
 </footer>
+
+
+
+</html>

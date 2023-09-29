@@ -85,7 +85,7 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link text-light">Inicio</a>
-                            <a href="" class="nav-item nav-link text-light">Productos</a>
+                            <a href="Productos.html" class="nav-item nav-link text-light">Productos</a>
                             <a href="" class="nav-item nav-link text-light">Nosotros</a>
                             <a href="" class="nav-item nav-link text-light">Contacto</a>
                         </div>
@@ -103,7 +103,7 @@
                         </div>
 
                         <!--Aca se pone el boton de inicio de sesion y de registro-->
-                        <button id="boton-iniciosesion" class="btn btn-success px-3 mr-2">Iniciar Sesión</button>
+                        <button id="btnIniciosesion" class="btn btn-success px-3 mr-2">Iniciar Sesión</button>
                         <button type="button" class="btn btn-success px-3" data-bs-toggle="modal" data-bs-target="#modal-registro">
                             Registrarse
                         </button>
@@ -127,14 +127,33 @@
                     Tipo de perfil solicitado
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-success">Cliente</button>
-                    <button type="button" class="btn btn-success">Productor</button>
-                    <button type="button" class="btn btn-success">Transportista</button>
+                    <button type="button" class="btn btn-success" id="btnCliente">Cliente</button>
+                    <button type="button" class="btn btn-success" id="btnProductor">Productor</button>
+                    <button type="button" class="btn btn-success" id="btnTransportista">Transportista</button>
                 </div>
             </div>
             
         </div>
     </div>
+    <!--2DO MODAL (PARA TIPO DE CLIENTE)-->
+    <div class="modal fade" id="modal-cliente" tabindex="-1" aria-labelledby="modal-clienteLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-clienteLabel">REGISTRO</h5>
+                    <button type="button" class="btn btn-danger ml-3" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+                <div class="modal-body">
+                    ¿Qué tipo de cliente eres?
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-outline-success" id="btnClientePersona">Persona natural</button>
+                    <button type="button" class="btn btn-outline-success" id="btnClienteEmpresa">Empresa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <!-- INICIO DEL CARRUSEL -->
     <!----------------------------------------------------->
@@ -411,28 +430,39 @@
 
     <!--SCRIPTS DE BOTONES-->
     <script>
-
-        // Obtén una referencia al botón por su ID
-        var boton = document.getElementById("boton-iniciosesion");
-      
-        // Agrega un evento cuando se le de click al botón
-        boton.addEventListener("click", function() {
-          // Redirecciona a la página de inicio de sesion
-          window.location.href = "inicio_de_sesión.html";
+        document.getElementById('btnIniciosesion').addEventListener('click', function () {
+            window.location.href = 'Inicio_de_sesión.html';
         });
     </script>
+    
     <script>
-
-        // Obtén una referencia al botón por su ID
-        var boton = document.getElementById("boton-registrarse");
-      
-        // Agrega un evento cuando se le de click al botón
-        boton.addEventListener("click", function() {
-          // Redirecciona a la página de inicio de sesion
-          window.location.href = "Registrarse.html";
+        document.getElementById('btnProductor').addEventListener('click', function () {
+            window.location.href = 'Registro_productor.html';
+        });
+    
+        document.getElementById('btnTransportista').addEventListener('click', function () {
+            window.location.href = 'Registro_transportista.html';
         });
     </script>
-      
+
+    <!--SCRIPT DE BOTON REGISTRO DE CLIENTE-->
+    <script>
+        document.getElementById('btnCliente').addEventListener('click', function () {
+            $('#modal-cliente').modal('show');
+        });
+    </script>
+    
+    <!--BOTONES PARA IR A REGISTRO POR TIPO DE CLIENTE-->
+    <script>
+        document.getElementById('btnClientePersona').addEventListener('click', function () {
+            window.location.href = 'Registro_cliente_persona.html';
+        });
+    
+        document.getElementById('btnClienteEmpresa').addEventListener('click', function () {
+            window.location.href = 'Registro_cliente_empresa.html';
+        });
+    </script>
+
     <!-------------------------------------------------->
 
 
@@ -449,10 +479,14 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
+   
     <!-- MODALES? -->
     <script>
     const myModal = document.getElementById('modal-registro');
     const myInput = document.getElementById('myInput');
+    
+    
+  
     
     myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus();

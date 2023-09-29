@@ -9743,3 +9743,12 @@ a.text-dark:hover, a.text-dark:focus {
 .color-menu{
   color: white;
 }
+
+.custom-control-input:checked + .custom-control-label::before {
+  background-color: green; /* Cambia el color de fondo a verde */
+}
+
+.fondo-transparente{
+  background-color: red;
+  margin-a;
+}
