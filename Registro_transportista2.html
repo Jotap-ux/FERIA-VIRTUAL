@@ -86,8 +86,8 @@
                         <div class="navbar-nav mr-auto py-0">
                             <a href="index.html" class="nav-item nav-link text-light">Inicio</a>
                             <a href="Productos.html" class="nav-item nav-link text-light">Productos</a>
-                            <a href="" class="nav-item nav-link text-light">Nosotros</a>
-                            <a href="" class="nav-item nav-link text-light">Contacto</a>
+                            <a href="Nosotros.html" class="nav-item nav-link text-light">Nosotros</a>
+                            <a href="Formulario_contacto.html" class="nav-item nav-link text-light">Contacto</a>
                         </div>
 
                         <!--ICONOS carrito y corazon-->
@@ -279,7 +279,7 @@
                     Su Documentación será revisada, estado pendiente!
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" id="btnAceptarTransportista2">Continuar</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal" aria-label="Close" id="btnAceptarTransportista2">Aceptar</button>
                 </div>
             </div>
             
@@ -327,10 +327,14 @@
 
     <!---NUEVOS MODALES-->
 
-    <!--Modal para recargar todo cuando se de en aceptar-->
+
+    <!--Modal para recargar todo cuando se de en "Continuar"-->
+    <!--SCRIPT DE BOTON ACEPTAR TERMINOS Y CONDICIONES-->
     <script>
-        document.getElementById("btnAceptarTransportista2").addEventListener("click", function() {
-            location.reload(); // Recargar la página cuando se hace clic en el botón "No"
+        document.getElementById('btnAceptarTransportista2').addEventListener('click', function () {
+            setTimeout(function () {
+                window.location.href = 'Registro_transportista.html';
+            }, 500); // 500 milisegundos (3 segundos)
         });
     </script>
     <!-------------------------------------------------->
