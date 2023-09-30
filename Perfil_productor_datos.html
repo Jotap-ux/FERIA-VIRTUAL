@@ -132,7 +132,6 @@
             
         </div>
     </div>
-    <!------------------------>
 
     <!--CONTENIDO DEL LA PAGINA-->
     <div class="container-fluid mt-3">
@@ -141,13 +140,15 @@
             <div class="col-lg-4">
                 
                 <div class="bg-light p-10 mb-2 text-center">
-                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Cliente</span></h1>
+                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Productor</span></h1>
                 </div>
                 <div class="bg-light p-30 mb-5">
                     <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Información</span></h2>
-                    <h3><a href="Perfil_cliente_datos.html" class="color-links">DATOS</a></h3>
-                    <h3><a href="Perfil_cliente_domicilio.html" class="color-links">DOMICILIO</a></h3>
-                    <h3><a href="Perfil_cliente_pedidos.html" class="color-links">PEDIDOS</a></h3>
+                    <h3><a href="Perfil_productor_datos.html" class="color-links">DATOS</a></h3>
+                    <h3><a href="Perfil_productor_domicilio.html" class="color-links">DOMICILIO</a></h3>
+                    <h3><a href="Perfil_productor_productos.html" class="color-links">PRODUCTOS</a></h3>
+                    <h3><a href="Perfil_productor_envios.html" class="color-links">ENVÍOS</a></h3>
+                    <h3><a href="Perfil_productor_pedidos.html" class="color-links">PEDIDOS</a></h3>
                 </div>
 
             </div>
@@ -156,99 +157,40 @@
                 <div class="bg-light p-30 mb-5">
                     <div class="row">
 
-                        <!------------------------------------------------------------>
+                        <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
                         <div class="col-12">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">HISTORIAL</span></h3>
+                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DATOS PERSONALES</span></h3>
                         </div>
-                        <!-------------------TABLA DE HISTORIAL DE PEDIDO---------->
-                        <div class="col-md-12 form-group">
-                            <table class="table table-dark table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">ID_PEDIDO</th>
-                                        <th scope="col">FECHA</th>
-                                        <th scope="col">MONTO</th>
-                                        <th scope="col">ESTADO</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">0001_0001</th>
-                                        <td>10/04/23</td>
-                                        <td>$ 100.000</td>
-                                        <td>En Curso</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">0002_0002</th>
-                                        <td>10/05/23</td>
-                                        <td>$ 125.000</td>
-                                        <td>Finalizado</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">0003_0003</th>
-                                        <td>10/06/23</td>
-                                        <td>$ 150.500</td>
-                                        <td>Finalizado</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
+                        <!-------------------SON DE 4 EN 4---------->
+                        <div class="col-md-6 form-group">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" placeholder="Nombre Productor">
                         </div>
-                        <!------------------------------------------------------------->
-                        <div class="col-12">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DETALLE DE PEDIDO</span></h3>
+                        <div class="col-md-6 form-group">
+                            <label>Apellido</label>
+                            <input class="form-control" type="text" placeholder="Apellido Productor">
                         </div>
-                        <!----------------PRIMER DETALLE-------------------------------------->
-                        <div class="col-lg-6">
-                            <div class="bg-light mb-5 border border-dark">
-                                <div class="border-bottom pb-2 separacion-detalles">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>ID_PEDIDO :</h6>
-                                        <h6>0001_0001</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>FECHA :</h6>
-                                        <h6>10/04/23</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>DETALLE :</h6>
-                                        <h6>500 (Kg) Papas</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>ESTADO :</h6>
-                                        <h6>Pendiente de pago</h6>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-6 form-group">
+                            <label>Número de identificación</label>
+                            <input class="form-control" type="text" placeholder="12.345.678-9">
                         </div>
-                        
-                        <!-----------------SEGUNDO DETALLE------------------------>
-                        <div class="col-lg-6">                        
-                            <div class="bg-light mb-2 border border-dark">
-                                <div class="border-bottom pb-2 separacion-detalles">
-                                    <div class="d-flex justify-content-between">
-                                        <h6>MONTO</h6>
-                                        <h6>$ 991.000</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <h6>COMISIÓN</h6>
-                                        <h6>$ 10.000</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <h6>TRANSPORTE</h6>
-                                        <h6>$ 16.000</h6>
-                                    </div>
-                                    <div class="pt-2">
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <h5>Total</h5>
-                                            <h5>$11.150</h5>
-                                        </div>                                    
-                                    </div>
-                                </div>
-                                
-                            </div>
+                        <div class="col-md-6 form-group">
+                            <label>Fecha de nacimiento </label>
+                            <input class="form-control" type="date" placeholder="11-12-1998">
                         </div>
-                        <!--------->
+
+                        <div class="col-md-6 form-group">
+                            <label></label>
+                        </div>
+
+                        <div class="col-md-6 form-group text-center">
+                            <button type="button" class="btn btn-success btn-lg mb-1 w-50" data-bs-toggle="modal" data-bs-target="#modal-modificar-productor1">
+                               Modificar
+                            </button>
+                            <button type="button" class="btn btn-success btn-lg mb-1 w-65" data-bs-toggle="modal" data-bs-target="#modal-inhabilitar-cuenta-prod">
+                                Inhabilitar cuenta
+                            </button>
+                        </div>
                     </div>
                 </div>              
             </div>  
@@ -257,23 +199,73 @@
     </div>
     <!------------------------------------->
 
+
+    <!--2DOS MODALES-->
+    <!--MODAL PARA MODIFICAR DATOS PERSONALES PRODUCTOR-->
+
+    <div class="modal fade" id="modal-modificar-productor1" tabindex="-1" aria-labelledby="modal-formu-contactoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-formu-contactoLabel">MENSAJE</h5>
+                </div>
+                <div class="modal-body">
+                    Sus datos personales han sido modificados!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" id="btnAceptar-modificacion" data-bs-dismiss="modal" aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-------------MODAL PARA PREGUNTAR SI DESEA INHABILITAR SU CUENTA DE PRODUCTOR----------->
+    <div class="modal fade" id="modal-inhabilitar-cuenta-prod" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-avisoLabel">REGISTRO</h5>
+                </div>
+                <div class="modal-body">
+                    ¿Está seguro que inhabilitar su cuenta?
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" id="btnDeshabilitarSI" data-bs-target="#modal-aviso-inhabilitacion">Si</button>
+                    <button type="button" class="btn btn-danger" id="btnDeshabilitarNO" data-bs-dismiss="modal" aria-label="Close">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------MODAL PARA AVISAR QUE SU CUENTA FUE DESHABILITADA---------------------->
+    <div class="modal fade" id="modal-aviso-inhabilitacion-prod" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-avisoLabel">REGISTRO</h5>
+                </div>
+                <div class="modal-body">
+                    Su cuenta ha sido Inhabilitada!!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" id="btnCuentaEliminada" data-bs-dismiss="modal" aria-label="Close">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------->
+
     <!-- BOTON PARA VOLVER ARRIBA -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!--SCRIPTS DE BOTONES-->
+
+    <!---NUEVOS MODALES-->
+    <!--Modal para recargar todo cuando se de en aceptar-->
     <script>
-        document.getElementById('btnIniciosesion').addEventListener('click', function () {
-            window.location.href = 'Inicio_de_sesión.html';
-        });
-    </script>
-    
-    <script>
-        document.getElementById('btnProductor').addEventListener('click', function () {
-            window.location.href = 'Registro_productor.html';
-        });
-    
-        document.getElementById('btnTransportista').addEventListener('click', function () {
-            window.location.href = 'Registro_transportista.html';
+        document.getElementById("btnAceptar-modificacion").addEventListener("click", function() {
+            location.reload(); // Recargar la página cuando se hace clic en el botón "Aceptar"
         });
     </script>
 
@@ -282,9 +274,21 @@
         document.getElementById('btnCerrarSesion').addEventListener('click', function () {
             window.location.href = 'index.html';
         });
-
     </script>
-    
+
+    <!---------------->
+    <!----------MODAL PARA AVISAR QUE LA CUENTA FUE INHABILITADA----->
+    <script>
+        document.getElementById('btnDeshabilitarSI').addEventListener('click', function () {
+            $('#modal-aviso-inhabilitacion-prod').modal('show');
+        });
+    </script>
+    <!----------------------MODAL PARA VOLVER SALIR Y VOLVER AL INDICE------------------------->
+    <script>
+        document.getElementById('btnCuentaEliminada').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+    </script>
 
     <!-- LIBRERIAS PARA PODER USAR BOOSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -302,7 +306,7 @@
    
     <!-- MODALES? -->
     <script>
-    const myModal = document.getElementById('modal-cerrar-sesion');
+    const myModal = document.getElementById('modal-registro');
     const myInput = document.getElementById('myInput');
     
     

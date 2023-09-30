@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Icono de la pestaña de la pagina -->
-    <link href="img/logo_v3.png" rel="icon">
+    <link href="img/logo_v3.png" rel="icon" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <!-- Para poder cargar las fuentes de Google Web Fonts en tu página web, lo que te permite utilizar la fuente
@@ -24,6 +24,9 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!--WEY YAAAA-->
+    <!-- Incluye los estilos de Bootstrap (CSS) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
 
     <!-- Incluye el JavaScript de Bootstrap (JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
@@ -64,7 +67,8 @@
     </div>
     <!-- Fin de la primera barra de navegacion -->
 
-    <!-- BARRA DE NAVEGACIÓN -->
+
+   <!-- BARRA DE NAVEGACIÓN -->
     <div class="container-fluid bg-dark mb-30" style="margin-bottom: 0;">
         <div class="row px-xl-5" >
             
@@ -99,9 +103,8 @@
                         </div>
 
                         <!--Aca se pone el boton de inicio de sesion y de registro-->
-                        <button id="btnIniciosesion" class="btn btn-success px-3 mr-2">Iniciar Sesión</button>
-                        <button type="button" class="btn btn-success px-3" data-bs-toggle="modal" data-bs-target="#modal-registro">
-                            Registrarse
+                        <button type="button" class="btn btn-danger px-3" data-bs-toggle="modal" data-bs-target="#modal-cierre-sesion">
+                            Cerrar Sesión
                         </button>
 
                     </div>
@@ -112,158 +115,148 @@
     <!-- FIN DE LA BARRA DE NAVEGACIÓN -->
 
     <!-- Modal -->
-    <div class="modal fade" id="modal-registro" tabindex="-1" aria-labelledby="modal-registroLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-cierre-sesion" tabindex="-1" aria-labelledby="modal-registroLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header justify-content-center">
-                    <h5 class="modal-title" id="modal-registroLabel">REGISTRO</h5>
-                    <button type="button" class="btn btn-danger ml-3" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <h5 class="modal-title" id="modal-registroLabel">ADVERTENCIA</h5>            
                 </div>
                 <div class="modal-body">
-                    Tipo de perfil solicitado
+                    ¿Desea cerrar su sesión?
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-success" id="btnCliente">Cliente</button>
-                    <button type="button" class="btn btn-success" id="btnProductor">Productor</button>
-                    <button type="button" class="btn btn-success" id="btnTransportista">Transportista</button>
+                    <button type="button" class="btn btn-success" id="btnCerrarSesion">Si</button>
+                    <button type="button" class="btn btn-danger" id="btnVolver" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>            
                 </div>
             </div>
             
         </div>
     </div>
-    <!--2DO MODAL (PARA TIPO DE CLIENTE)-->
-    <div class="modal fade" id="modal-cliente" tabindex="-1" aria-labelledby="modal-clienteLabel" aria-hidden="true">
+    <!------------------------>
+
+    <!--CONTENIDO DEL LA PAGINA-->
+    <div class="container-fluid mt-3">
+        <div class="row px-xl-5">
+            
+            <div class="col-lg-4">
+                
+                <div class="bg-light p-10 mb-2 text-center">
+                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Productor</span></h1>
+                </div>
+                <div class="bg-light p-30 mb-5">
+                    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Información</span></h2>
+                    <h3><a href="Perfil_productor_datos.html" class="color-links">DATOS</a></h3>
+                    <h3><a href="Perfil_productor_domicilio.html" class="color-links">DOMICILIO</a></h3>
+                    <h3><a href="Perfil_productor_productos.html" class="color-links">PRODUCTOS</a></h3>
+                    <h3><a href="Perfil_productor_envios.html" class="color-links">ENVÍOS</a></h3>
+                    <h3><a href="Perfil_productor_pedidos.html" class="color-links">PEDIDOS</a></h3>
+                </div>
+
+            </div>
+
+            <div class="col-lg-8 mx-auto">
+                <div class="bg-light p-30 mb-5">
+                    <div class="row">
+
+                        <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
+                        <div class="col-12">
+                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DATOS DOMICILIO</span></h3>
+                        </div>
+                        <!-------------------SON DE 4 EN 4---------->
+                        <div class="col-md-6 form-group">
+                            <label>Dirección</label>
+                            <input class="form-control" type="text" placeholder="San Guillermo 1234">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Comuna</label>
+                            <input class="form-control" type="text" placeholder="La Florida">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>Región</label>
+                            <input class="form-control" type="text" placeholder="Metropolitana">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label>País</label>
+                            <input class="form-control" type="text" placeholder="Chile">
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <label></label>
+                        </div>
+
+                        <div class="col-md-6 form-group text-center">
+                            <button type="button" class="btn btn-success btn-lg mb-1 w-50" data-bs-toggle="modal" data-bs-target="#modal-modifi-domicilio-prod">
+                               Modificar
+                            </button>
+                        </div>
+                    </div>
+                </div>              
+            </div>  
+
+        </div>
+    </div>
+    <!------------------------------------->
+
+
+    <!--2DOS MODALES-->
+    <!--MODAL PARA ACEPTAR TERMINOS Y CONDICIONES-->
+
+    <div class="modal fade" id="modal-modifi-domicilio-prod" tabindex="-1" aria-labelledby="modal-formu-contactoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header justify-content-center">
-                    <h5 class="modal-title" id="modal-clienteLabel">REGISTRO</h5>
-                    <button type="button" class="btn btn-danger ml-3" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <h5 class="modal-title" id="modal-formu-contactoLabel">MENSAJE</h5>
                 </div>
                 <div class="modal-body">
-                    ¿Qué tipo de cliente eres?
+                    Los datos de su domicilio han sido modificados con éxito!
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-outline-success" id="btnClientePersona">Persona natural</button>
-                    <button type="button" class="btn btn-outline-success" id="btnClienteEmpresa">Empresa</button>
+                    <button type="button" class="btn btn-success" id="btnAceptar-modifi-domicilio-prod" data-bs-dismiss="modal" aria-label="Close">Aceptar</button>
                 </div>
             </div>
+            
         </div>
     </div>
-
-
-    
-    <!--ACA VA EL CONTENIDO DE LA PAGINA-->
-    <!--FORMULARIO DE INICIO DE SESIÓN-->
-    <div class="container-fluid bg-dark mt-5 custom-container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-9">
-                <form id="loginForm" class="mb-4" action="">
-                    <h2 class="text-white text-center mb-3 mt-5">INICIAR SESIÓN</h2>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Correo electrónico</label>
-                        <input type="text" class="form-control" id="inputCorreo" placeholder="correo@ejemplo.com" minlength="5" maxlength="20" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="inputPassword5" class="form-label text-white">Contraseña</label>
-                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Ingresa tu contraseña" >
-                        <!-- El atributo minlength establece la longitud mínima -->
-                        <a href="#" class="nav-item nav-link text-success text-center mt-3">Olvidé mi contraseña</a>
-                    </div>
-                    <div class="mb-3">
-                        <button id="btnLogin" class="btn btn-success btn-block mb-5">Iniciar sesión</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--------------------------------------------------------------------->
+    <!------------------------------------------>
 
     <!-- BOTON PARA VOLVER ARRIBA -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-    <!--VALIDACION DE FORMULARIO?--->
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function() {
-            // Obtén el elemento del botón y el campo de correo
-            const btnLogin = document.getElementById('btnLogin');
-            const inputCorreo = document.getElementById('inputCorreo');
-        
-            // Agregamos un evento cuando se de click al botón de Login
-            btnLogin.addEventListener('click', function (event) {
-            const correoUsuario = inputCorreo.value;
-            console.log("Correo ingresado:", correoUsuario);
-
-            if (correoUsuario.includes('cliente')) {
-                console.log("Redirigiendo a Perfil-cliente.html");
-                window.location.href = 'Perfil_cliente_datos.html';
-            } else if (correoUsuario.includes('productor')) {
-                console.log("Redirigiendo a perfil de productor");
-                window.location.href = 'Perfil_productor_datos.html';
-            } else if (correoUsuario.includes('transportista')) {
-                console.log("Redirigiendo a perfil de transportista");
-                window.location.href = 'Perfil_transportista_datos.html';
-            } else {
-                console.log("Hello world");
-            }
-            event.preventDefault();
-            });
-        });
-
-    </script>
-    <!----->
-
-
-    <!--SCRIPTS DE BOTONES-->
-    <script>
-        document.getElementById('btnIniciosesion').addEventListener('click', function () {
-            window.location.href = 'Inicio_de_sesión.html';
-        });
-    </script>
     
+    <!--SCRIPT DE BOTON PARA CERRAR SESIÓN-->
     <script>
-        document.getElementById('btnProductor').addEventListener('click', function () {
-            window.location.href = 'Registro_productor.html';
-        });
-    
-        document.getElementById('btnTransportista').addEventListener('click', function () {
-            window.location.href = 'Registro_transportista.html';
+        document.getElementById('btnCerrarSesion').addEventListener('click', function () {
+            window.location.href = 'index.html';
         });
     </script>
+    <!--------------------------------------------------->
 
-    <!--SCRIPT DE BOTON REGISTRO DE CLIENTE-->
-    <script>
-        document.getElementById('btnCliente').addEventListener('click', function () {
-            $('#modal-cliente').modal('show');
+
+     <!--Modal para recargar todo cuando se de en aceptar-->
+     <script>
+        document.getElementById("btnAceptar-modifi-domicilio-prod").addEventListener("click", function() {
+            location.reload(); // Recargar la página cuando se hace clic en el botón "Aceptar"
         });
     </script>
-    
-    <!--BOTONES PARA IR A REGISTRO POR TIPO DE CLIENTE-->
-    <script>
-        document.getElementById('btnClientePersona').addEventListener('click', function () {
-            window.location.href = 'Registro_cliente_persona.html';
-        });
-    
-        document.getElementById('btnClienteEmpresa').addEventListener('click', function () {
-            window.location.href = 'Registro_cliente_empresa.html';
-        });
-    </script>
-
-    <!-------------------------------------------------->
-
 
     <!-- LIBRERIAS PARA PODER USAR BOOSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
-    
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <!-- MODALES? -->
+   <!-- MODALES? -->
     <script>
-    const myModal = document.getElementById('modal-registro');
+    const myModal = document.getElementById('modal-cerrar-sesion');
     const myInput = document.getElementById('myInput');
+    
+    
     
     myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus();
@@ -273,9 +266,13 @@
 </body>
 
 <footer>
-    <div class="container-fluid bg-dark text-white pt-5 mt-5 ">
+    <div class="container-fluid bg-dark text-white pt-5 ">
         <div class="row justify-content-center px-xl-5">
             <a href="#" class="text-white mb-5">© 2004 Maipo Grande. Todos los Derechos Reservados. </a>
         </div>
     </div>
 </footer>
+
+
+
+</html>
