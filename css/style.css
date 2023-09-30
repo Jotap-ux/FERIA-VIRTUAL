@@ -9748,7 +9748,16 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: green; /* Cambia el color de fondo a verde */
 }
 
-.fondo-transparente{
-  background-color: red;
-  margin-a;
+.separacion-detalles{
+  padding: 30px;
+}
+
+/*COLOR DE LOS LINK*/
+.color-links {
+  color: #17a2b8; /* Este es el color azul "info" utilizado en Bootstrap por defecto */
+  text-decoration: none; /* Para eliminar el subrayado predeterminado del enlace */
+}
+
+.color-links:hover {
+  color: #117a8b; /* Cambia el color cuando se pasa el ratón sobre el enlace, si lo deseas */
 }
