@@ -159,39 +159,95 @@
 
                         <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
                         <div class="col-12">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DATOS PERSONALES</span></h3>
+                            <h4 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">VEHÍCULO</span></h4>
                         </div>
                         <!-------------------SON DE 4 EN 4---------->
                         <div class="col-md-6 form-group">
-                            <label>Nombre</label>
-                            <input class="form-control" type="text" placeholder="Juan Pablo">
+                            <label>Placa Patente</label>
+                            <input class="form-control" type="text" placeholder="AB-AB-11">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Apellido</label>
-                            <input class="form-control" type="text" placeholder="González Alonso">
+                            <label>Capacidad de Carga</label>
+                            <input class="form-control" type="text" placeholder="2.500 Kg.">
                         </div>
                         <div class="col-md-6 form-group">
-                            <label>Número de identificación</label>
-                            <input class="form-control" type="text" placeholder="12.345.678-9">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Fecha de nacimiento </label>
-                            <input class="form-control" type="date" placeholder="15/12/1999">
+                            <label>Marca</label>
+                            <input class="form-control" type="text" placeholder="KIA">
                         </div>
 
+                        <div class="col-md-6 form-group">
+                            <label>Modelo</label>
+                            <input class="form-control" type="text" placeholder="FRONTIER">
+                        </div>
+
+                        <div class="col-md-6 form-group">
+                            <label>Año</label>
+                            <input class="form-control" type="text" placeholder="2023">
+                        </div>
+                        
+                        <div class="col-md-6 form-group">  
+                            <label>Tipo Carrozado</label>                                    
+                            <select class="custom-select">
+                                <option selected>Carroceria Cerrada</option>
+                                <option>categoria 1</option>
+                                <option>categoria 2</option>
+                                <option>categoria 3</option>
+                            </select>
+                        </div>                      
+                        <div class="col-md-6 form-group">                        
+                            <!---------------DOCUMENTACIÓN DEL VEHÍCULO------------------------------>
+                            <div class="col-12 form-group mb-0">
+                                <h6 class="section-title position-relative text-uppercase mb-3"><span class="bg-light pr-3">Documentación</span></h6>
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="permiso-circulacion">
+                                        <label class="custom-control-label" for="permiso-circulacion">Permiso de Circulación</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="seguro-soap">
+                                        <label class="custom-control-label" for="seguro-soap">Seguro Obligatorio (SOAP)</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="padron-vehículo">
+                                        <label class="custom-control-label" for="padron-vehículo">Padrón Vehículo</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="revision-tecnica">
+                                        <label class="custom-control-label" for="revision-tecnica">Revisión Técnica / Homologado</label>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div>
                         <div class="col-md-6 form-group">
                             <label></label>
-                        </div>
-
-                        <div class="col-md-6 form-group text-center">
-                            <button type="button" class="btn btn-success btn-lg mb-1 w-50" data-bs-toggle="modal" data-bs-target="#modal-modificar-transporte1">
-                               Modificar
+                        </div>                                               
+                        <div class="col-5 form-group mt-3">                                    
+                            <select class="custom-select">
+                                <option selected>Permiso de Circulación</option>
+                                <option>Seguro Obligatorio (SOAP)</option>
+                                <option>Padrón Vehículo</option>
+                                <option>Revisión Técnica / Homologado</option>
+                            </select>
+                        </div>                        
+                        <div class="col-4 form-group mt-3">                                                       
+                            <input class="form-control col-6" type="file" id="formFileMultiple" multiple accept=".pdf, .doc, .docx">
+                        </div>            
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-danger btn-lg mb-1 col-5" data-bs-toggle="modal" data-bs-target="#modal-modificar-transporte1">
+                                Eliminar
                             </button>
-                            <button type="button" class="btn btn-success btn-lg mb-1 w-65" data-bs-toggle="modal" data-bs-target="#modal-inhabilitar-cuenta-transpor">
-                                Inhabilitar cuenta
+                            <button type="button" class="btn btn-success btn-lg mb-1 col-5" data-bs-toggle="modal" data-bs-target="#modal-modificar-transporte1">
+                                Modificar
                             </button>
-                        </div>
-                    </div>
+                        </div>           
+                                            
+                    </div>                
                 </div>              
             </div>  
 

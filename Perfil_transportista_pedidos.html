@@ -141,15 +141,15 @@
             <div class="col-lg-4">
                 
                 <div class="bg-light p-10 mb-2 text-center">
-                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Productor</span></h1>
+                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Transportista</span></h1>
                 </div>
                 <div class="bg-light p-30 mb-5">
                     <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Información</span></h2>
-                    <h3><a href="Perfil_productor_datos.html" class="color-links">DATOS</a></h3>
-                    <h3><a href="Perfil_productor_domicilio.html" class="color-links">DOMICILIO</a></h3>
-                    <h3><a href="Perfil_productor_productos.html" class="color-links">PRODUCTOS</a></h3>
-                    <h3><a href="Perfil_productor_envios.html" class="color-links">ENVÍOS</a></h3>
-                    <h3><a href="Perfil_productor_pedidos.html" class="color-links">PEDIDOS</a></h3>
+                    <h3><a href="Perfil_transportista_datos.html" class="color-links">DATOS</a></h3>
+                    <h3><a href="Perfil_transportista_domicilio.html" class="color-links">DOMICILIO</a></h3>
+                    <h3><a href="Perfil_transportista_vehiculos.html" class="color-links">MIS VEHÍCULOS</a></h3>
+                    <h3><a href="Perfil_transportista_pedidos.html" class="color-links">PEDIDOS</a></h3>
+                    <h3><a href="Perfil_transportista_transportes.html" class="color-links">MIS TRANSPORTES</a></h3>
                 </div>
 
 
@@ -161,7 +161,7 @@
 
                         <!------------------------------------------------------------>
                         <div class="col-12">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">ENVIO - PEDIDO</span></h3>
+                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">TRANSPORTE DE PEDIDOS</span></h3>
                         </div>
                         <!-------------------TABLA DE HISTORIAL DE PEDIDO---------->
                         <div class="col-md-12 form-group">
@@ -170,7 +170,7 @@
                                     <tr>
                                         <th scope="col">ID_PEDIDO</th>
                                         <th scope="col">FECHA</th>
-                                        <th scope="col">MONTO</th>
+                                        <th scope="col">MONTO ENVÍO </th>
                                         <th scope="col">ESTADO</th>
                                     </tr>
                                 </thead>
@@ -179,19 +179,19 @@
                                         <th scope="row">0001_0001</th>
                                         <td>10/04/23</td>
                                         <td>$ 100.000</td>
-                                        <td>En Curso</td>
+                                        <td>En Camino</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">0002_0002</th>
                                         <td>10/05/23</td>
                                         <td>$ 125.000</td>
-                                        <td>Finalizado</td>
+                                        <td>Entregado</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">0003_0003</th>
                                         <td>10/06/23</td>
                                         <td>$ 150.500</td>
-                                        <td>Finalizado</td>
+                                        <td>Entregado</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -199,77 +199,46 @@
                         </div>
                         <!------------------------------------------------------------->
                         <!--TITULO DETALLE DE PEDIDO Y BOTON "MODIFICAR"-->
-                        <div class="col-6">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DETALLE DE PEDIDO</span></h3>
+                        <div class="col-4">
+                            <h3 class="section-title position-relative text-uppercase mb-3 text-left"><span class="bg-light pr-3">ESTADO ENVÍO</span></h3>
                         </div>
-                        <div class="col-6">
-                            <div class="d-flex justify-content-end">
-                                <button type="button" class="btn btn-success btn-lg mb-1">ACTUALIZAR</button>
+                        <div class="col-4">
+                            <select class="custom-select">
+                                <option selected>En camino</option>
+                                <option>Entregado</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-flex justify-content-begin">
+                                <button type="button" class="btn btn-success btn-md mb-1">ACTUALIZAR</button>
                             </div>
                         </div>
                         
-                        <!----------------PRIMER DETALLE-------------------------------------->
-                        <div class="col-lg-6">
-                            <div class="bg-light mb-5 border border-dark">
-                                <div class="border-bottom pb-2 separacion-detalles">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>ID_PEDIDO :</h6>
-                                        <h6>0001_0001</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>FECHA :</h6>
-                                        <h6>10/04/23</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>DETALLE :</h6>
-                                        <h6>500 (Kg) Papas</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6>ESTADO ENVÍO :</h6>
-                                        <h6>PREPARADO</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <!--VER ESTADO DEL ENVIO-->
-                        <div class="col-lg-12 ">
+                        <div class="col-lg-12 mt-5">
                             <div class="bg-light mb-5 border border-dark">
                                 <div class="border-bottom pb-2 separacion-detalles row">
                                     
-                                    <input type="range" class="form-range col-12" min="0" max="5" id="customRange2">
+                                    <input type="range" class="form-range col-12" min="0" max="2" id="customRange2">
                                     
-                                    <div class="col-2 text-center mt-3">
+                                    <div class="col-4 text-center mt-3">
                                         <!-- Imagen encima del texto -->
-                                        <img src="img/preparación.svg" class="estilo-iconos" alt="Descripción de la imagen">
-                                        <h6>PREPARACIÓN</h6>
+                                        <img src="img/retiro.svg" class="estilo-iconos" alt="Descripción de la imagen">
+                                        <h6>RETIRO</h6>
                                     </div>
                                     
-                                    <div class="col-2 text-center mt-3">
+                                    <div class="col-4 text-center mt-3">
                                         <!-- Icono 2 -->
-                                        <img src="img/recepcion-bodega.svg" class="estilo-iconos" alt="Descripción de la imagen">
-                                        <h6>RECEPCIÓN BODEGA</h6>
-                                    </div>
-                                    <div class="col-2 text-center mt-3">
-                                        <!-- Icono 3 -->
-                                        <img src="img/revision.svg" class="estilo-iconos" alt="Descripción de la imagen">
-                                        <h6>REVISIÓN</h6>
-                                    </div>
-                                    <div class="col-2 text-center mt-3">
-                                        <!-- Icono 4 -->
-                                        <img src="img/embalaje.svg" class="estilo-iconos" alt="Descripción de la imagen">
-                                        <h6>EMBALAJE</h6>
-                                    </div>
-                                    <div class="col-2 text-center mt-3">
-                                        <!-- Icono 5 -->
                                         <img src="img/envio.svg" class="estilo-iconos" alt="Descripción de la imagen">
-                                        <h6>ENVÍO</h6>
+                                        <h6>EN CAMINO</h6>
                                     </div>
-                                    <div class="col-2 text-center mt-3">
-                                        <!-- Icono 6 -->
-                                        <img src="img/preparación.svg" class="estilo-iconos" alt="Descripción de la imagen">
+                                    <div class="col-4 text-center mt-3">
+                                        <!-- Icono 3 -->
+                                        <img src="img/recepcion-cliente.svg" class="estilo-iconos" alt="Descripción de la imagen">
                                         <h6>RECEPCIÓN CLIENTE</h6>
-                                    </div>                                    
+                                    </div>
+                                          
                                 </div>
                             </div>
                         </div>
