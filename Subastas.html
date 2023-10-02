@@ -68,7 +68,7 @@
     <!-- Fin de la primera barra de navegacion -->
 
 
-   <!-- BARRA DE NAVEGACIÓN -->
+    <!-- BARRA DE NAVEGACIÓN -->
     <div class="container-fluid bg-dark mb-30" style="margin-bottom: 0;">
         <div class="row px-xl-5" >
             
@@ -88,7 +88,8 @@
                             <a href="Productos.html" class="nav-item nav-link text-light">Productos</a>
                             <a href="Nosotros.html" class="nav-item nav-link text-light">Nosotros</a>
                             <a href="Formulario_contacto.html" class="nav-item nav-link text-light">Contacto</a>
-                            <a href="Perfil_productor_datos.html" class="nav-item nav-link text-light">Perfil</a>
+                            <a href="Perfil_transportista_datos.html" class="nav-item nav-link text-light">Perfil</a>
+                            <a href="Subastas.html" class="nav-item nav-link text-light">Subastas</a>
                         </div>
 
                         <!--ICONO CARRITO DE COMPRAS-->
@@ -129,109 +130,197 @@
             
         </div>
     </div>
-    <!------------------------>
 
     <!--CONTENIDO DEL LA PAGINA-->
     <div class="container-fluid mt-3">
-        <div class="row px-xl-5">
-            
-            <div class="col-lg-4">
-                
-                <div class="bg-light p-10 mb-2 text-center">
-                    <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Productor</span></h1>
-                </div>
-                <div class="bg-light p-30 mb-5">
-                    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">Información</span></h2>
-                    <h3><a href="Perfil_productor_datos.html" class="color-links">DATOS</a></h3>
-                    <h3><a href="Perfil_productor_domicilio.html" class="color-links">DOMICILIO</a></h3>
-                    <h3><a href="Perfil_productor_productos.html" class="color-links">PRODUCTOS</a></h3>
-                    <h3><a href="Perfil_productor_envios.html" class="color-links">ENVÍOS</a></h3>
-                    <h3><a href="Perfil_productor_pedidos.html" class="color-links">PEDIDOS</a></h3>
-                </div>
 
+        <!--TITULO SUBASTAS-->
+        <div class="col-lg-12">
+            <div class="p-10 mb-2 text-left">
+                <h1 class="section-title position-relative text-uppercase mx-xl-5 mb-4 text-left fondo-fruta"><span class="bg-light text-left">Subastas Disponibles</span></h1>
+            </div>
+        </div>
+
+         <!--SUBASTA 1-->  
+        <div class="row px-xl-0">
+
+            <!--IMAGEN-->
+            <div class="col-lg-3 ">                                
+                <div class="bg-light p-30 mb-3 border border-dark">
+                    <div>
+                        <img class="img-fluid w-100" src="img/platano.jpg" alt="">                        
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-8 mx-auto">
-                <div class="bg-light p-30 mb-5">
-                    <div class="row">
+             <!--ACA ESTA LA TABLA CON LOS DATOS DE LA SUBASTA--->
+            <!----------------PRIMER DETALLE-------------------------------------->
+            <div class="col-lg-6">
+                <div class="bg-light mb-3 border border-dark">
+                    <div class="border-bottom pb-2 separacion-detalles">
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>NÚMERO DE PEDIDO :</h6>
+                            <h6>0001_0001</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>CANTIDAD :</h6>
+                            <h6>1000</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>UNIDAD :</h6>
+                            <h6>KG</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>ÚLTIMO OFERTADO :</h6>
+                            <h6>$ 10.990</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>MI OFERTA :</h6>
+                            <h6>$ 12.500</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>FECHA LÍMITE :</h6>
+                            <h6>07-09-2023</h6>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>TIEMPO RESTANTE :</h6>
+                            <h6>12:59 (HRS:MIN)</h6>
+                        </div>
 
-                        <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
-                        <div class="col-12">
-                            <h3 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">DATOS DOMICILIO</span></h3>
+                        <!--MENSAJES DE PREVIZUALIZACIÓN-->
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>ORIGEN :</h6>
+                            <h6>
+                                SANTIAGO
+                                <a class="color-links custom-tooltip">
+                                  DETALLE  <span class="tooltip-text"> ORIGEN: AV. PADRE ALBERTO HURTADO 277</span>                                    
+                                </a>                                
+                            </h6>
                         </div>
-                        <!-------------------SON DE 4 EN 4---------->
-                        <div class="col-md-6 form-group">
-                            <label>Dirección</label>
-                            <input class="form-control" type="text" placeholder="San Guillermo 1234">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Comuna</label>
-                            <input class="form-control" type="text" placeholder="La Florida">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>Región</label>
-                            <input class="form-control" type="text" placeholder="Metropolitana">
-                        </div>
-                        <div class="col-md-6 form-group">
-                            <label>País</label>
-                            <input class="form-control" type="text" placeholder="Chile">
-                        </div>
-
-                        <div class="col-md-6 form-group">
-                            <label></label>
-                        </div>
-
-                        <div class="col-md-6 form-group text-center">
-                            <button type="button" class="btn btn-success btn-lg mb-1 w-50" data-bs-toggle="modal" data-bs-target="#modal-modifi-domicilio-prod">
-                               Modificar
-                            </button>
+                        <div class="d-flex justify-content-between align-items-center info-div">
+                            <h6>DESTINO :</h6>
+                            <h6>
+                                CONCEPCIÓN
+                                <a class="color-links custom-tooltip">
+                                  DETALLE  <span class="tooltip-text"> DESTINO: AV. LOS TOROS 7.200, SAN PEDRO DE LA PAZ</span>                                    
+                                </a>                                
+                            </h6>
                         </div>
                     </div>
-                </div>              
-            </div>  
+                </div>
+            </div>
+
+            <!--CUADRO CON LOS BOTONES-->
+            <div class="col-lg-3">                                
+                <div class="bg-light p-30 mb-5 border border-dark">
+                    <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-light pr-3">OFERTAR</span></h2>            
+                    <!-------------------------->
+                    <div class="col-md-12 form-group mb-3">                        
+                        <input class="form-control" type="number" placeholder="$ 15.990">
+                    </div>
+
+                    <div class="col-md-12 form-group text-right">
+                        <button type="button" class="btn btn-success btn-lg mb-3 w-100" data-bs-toggle="modal" data-bs-target="#modal-enviar-oferta">
+                           Enviar Oferta
+                        </button>
+                        <button type="button" class="btn btn-danger btn-lg mb-1 w-100" data-bs-toggle="modal" data-bs-target="#modal-eliminar-oferta">
+                            Eliminar Oferta
+                         </button>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </div>
     <!------------------------------------->
 
+    <!--MODAL PARA ENVIAR OFERTA EN UNA SUBASTA-->
 
-    <!--2DOS MODALES-->
-    <!--MODAL PARA ACEPTAR TERMINOS Y CONDICIONES-->
-
-    <div class="modal fade" id="modal-modifi-domicilio-prod" tabindex="-1" aria-labelledby="modal-formu-contactoLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-enviar-oferta" tabindex="-1" aria-labelledby="modal-formu-contactoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content text-center">
                 <div class="modal-header justify-content-center">
                     <h5 class="modal-title" id="modal-formu-contactoLabel">MENSAJE</h5>
                 </div>
                 <div class="modal-body">
-                    Los datos de su domicilio han sido modificados con éxito!
+                    Se ha enviado su oferta!
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-success" id="btnAceptar-modifi-domicilio-prod" data-bs-dismiss="modal" aria-label="Close">Aceptar</button>
+                    <button type="button" class="btn btn-info" id="btnEnviar-oferta" data-bs-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
             
         </div>
     </div>
-    <!------------------------------------------>
+
+    <!-------------MODAL PARA PREGUNTAR SI DESEA ELIMINAR LA OFERTA EN ESA SUBASTA----------->
+    <div class="modal fade" id="modal-eliminar-oferta" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-avisoLabel">REGISTRO</h5>
+                </div>
+                <div class="modal-body">
+                    ¿Está seguro que desea eliminar la oferta para esta subasta?
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-success" id="btnEliminar-oferSI" data-bs-target="#modal-aviso-inhabilitacion">Si</button>
+                    <button type="button" class="btn btn-danger" id="btnEliminar-oferNO" data-bs-dismiss="modal" aria-label="Close">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------MODAL PARA AVISAR QUE SU CUENTA FUE DESHABILITADA---------------------->
+    <div class="modal fade" id="modal-aviso-OferEliminada" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="modal-avisoLabel">MENSAJE</h5>
+                </div>
+                <div class="modal-body">
+                    Su oferta ha sido eliminada!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" id="btnOfertaEliminada" data-bs-dismiss="modal" aria-label="Close">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------->
 
     <!-- BOTON PARA VOLVER ARRIBA -->
     <a href="#" class="btn btn-success back-to-top"><i class="fa fa-angle-double-up"></i></a>
-    
+
+
+    <!---NUEVOS MODALES-->
+    <!--Modal para recargar todo cuando se de en aceptar-->
+    <script>
+        document.getElementById("btnEnviar-oferta").addEventListener("click", function() {
+            location.reload(); // Recargar la página cuando se hace clic en el botón "Aceptar"
+        });
+    </script>
+
     <!--SCRIPT DE BOTON PARA CERRAR SESIÓN-->
     <script>
         document.getElementById('btnCerrarSesion').addEventListener('click', function () {
             window.location.href = 'Inicio_de_sesión.html';
         });
     </script>
-    <!--------------------------------------------------->
 
-
-     <!--Modal para recargar todo cuando se de en aceptar-->
-     <script>
-        document.getElementById("btnAceptar-modifi-domicilio-prod").addEventListener("click", function() {
-            location.reload(); // Recargar la página cuando se hace clic en el botón "Aceptar"
+    <!---------------->
+    <!----------MODAL PARA AVISAR QUE LA CUENTA FUE INHABILITADA----->
+    <script>
+        document.getElementById('btnEliminar-oferSI').addEventListener('click', function () {
+            $('#modal-aviso-OferEliminada').modal('show');
+        });
+    </script>
+    <!----------------------MODAL PARA VOLVER SALIR Y VOLVER AL INDICE------------------------->
+    <script>
+        document.getElementById('btnOfertaEliminada').addEventListener('click', function () {
+            window.location.href = 'Subastas.html';
         });
     </script>
 
@@ -248,12 +337,14 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-   <!-- MODALES? -->
+   
+    <!-- MODALES? -->
     <script>
-    const myModal = document.getElementById('modal-cerrar-sesion');
+    const myModal = document.getElementById('modal-registro');
     const myInput = document.getElementById('myInput');
     
     
+  
     
     myModal.addEventListener('shown.bs.modal', () => {
         myInput.focus();

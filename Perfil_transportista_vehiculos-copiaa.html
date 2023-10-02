@@ -94,14 +94,12 @@
                             <a href="Productos.html" class="nav-item nav-link text-light">Productos</a>
                             <a href="Nosotros.html" class="nav-item nav-link text-light">Nosotros</a>
                             <a href="Formulario_contacto.html" class="nav-item nav-link text-light">Contacto</a>
+                            <a href="Perfil_transportista_datos.html" class="nav-item nav-link text-light">Perfil</a>
+                            <a href="Subastas.html" class="nav-item nav-link text-light">Subastas</a>
                         </div>
 
-                        <!--ICONOS carrito y corazon-->
+                        <!--ICONO CARRITO DE COMPRAS-->
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block mr-3">
-                            <a href="nav-fondo.html" class="btn px-0">
-                                <i class="fas fa-heart text-success"></i>
-                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                            </a>
                             <a href="Carrito.html" class="btn px-0 ml-3">
                                 <i class="fas fa-shopping-cart text-success"></i>
                                 <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
@@ -158,38 +156,8 @@
                 </div>
 
             </div>
-            
-            <!----BOTON AÑADIR-->
-
-            <div class="col-lg-12 mx-auto ml-auto">
-                <div class="p-30 mb-5">
-                    <div class="row">
-                        <div class="col-md-12 d-flex justify-content-end">                        
-                            <button id="boton-anadir-vehiculo" type="button" class="btn btn-info btn-lg mb-1 col-4 ml-2">
-                                Añadir
-                            </button>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!------------------------------------------------------------->
-        <!---------PROBANDO LA APARICIÓN DEL SEGUNDO CONTENEDOR------>
-        <div class="row px-xl-5" id="contenedor-ejemplo">
-    
-            <div class="col-lg-4">
-                
-                <div class="p-10 mb-2 text-center">
-                  
-                </div>
-                <div class="p-30 mb-5">
-                    
-                </div>
-
-            </div>
-
-            <!---?????????????????????????????-->
+            <!---CONTENEDOR ORIGINAL-->
+            <!--------------------------->
             <div class="col-lg-8 mx-auto">
                 <div class="bg-light p-30 mb-2">
                     <div class="row">
@@ -288,14 +256,140 @@
                         </div>                                                                                                                    
                     </div>                
                 </div>              
-            </div>  
-    
-        </div>
+            </div> 
+            <!--------------->
+            <!----BOTON AÑADIR-->
+            <div class="col-lg-12 mx-auto" id="boton-anadir-vehiculo">
+                <div class="p-30 mb-5">
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-end">                        
+                            <button  type="button" class="btn btn-info btn-lg mb-1 col-4 ml-2 align-right">
+                                Añadir
+                            </button>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------->
+            <!---------PROBANDO LA APARICIÓN DEL SEGUNDO CONTENEDOR------>
+            <div class="row px-xl-5 d-none" id="contenedor-ejemplo">
+        
+                <div class="col-lg-4">
+                    
+                    <div class="p-10 mb-2 text-center">
+                    
+                    </div>
+                    <div class="p-30 mb-5">
+                        
+                    </div>
+
+                </div>
+
+                <!---?????????????????????????????-->
+                <div class="col-lg-8 mx-auto">
+                    <div class="bg-light p-30 mb-2">
+                        <div class="row">
+
+                            <!--PALABRAS DENTRO DEL FORMULARIO PARA SEPARAR-->
+                            <div class="col-12">
+                                <h4 class="section-title position-relative text-uppercase mb-3 mt-3 text-left"><span class="bg-light pr-3">VEHÍCULO</span></h4>
+                            </div>
+                            <!-------------------SON DE 4 EN 4---------->
+                            <div class="col-md-6 form-group">
+                                <label>Placa Patente</label>
+                                <input class="form-control" type="text" placeholder="AB-AB-11">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Capacidad de Carga</label>
+                                <input class="form-control" type="text" placeholder="2.500 Kg.">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label>Marca</label>
+                                <input class="form-control" type="text" placeholder="KIA">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label>Modelo</label>
+                                <input class="form-control" type="text" placeholder="FRONTIER">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <label>Año</label>
+                                <input class="form-control" type="text" placeholder="2023">
+                            </div>
+                            
+                            <div class="col-md-6 form-group">  
+                                <label>Tipo Carrozado</label>                                    
+                                <select class="custom-select">
+                                    <option selected>Carroceria Cerrada</option>
+                                    <option>categoria 1</option>
+                                    <option>categoria 2</option>
+                                    <option>categoria 3</option>
+                                </select>
+                            </div>                      
+                            <div class="col-md-6 form-group">                        
+                                <!---------------DOCUMENTACIÓN DEL VEHÍCULO------------------------------>
+                                <div class="col-12 form-group mb-0">
+                                    <h6 class="section-title position-relative text-uppercase mb-3"><span class="bg-light pr-3">Documentos</span></h6>
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="permiso-circulacion">
+                                            <label class="custom-control-label" for="permiso-circulacion">Permiso de Circulación</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="seguro-soap">
+                                            <label class="custom-control-label" for="seguro-soap">Seguro Obligatorio (SOAP)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="padron-vehículo">
+                                            <label class="custom-control-label" for="padron-vehículo">Padrón Vehículo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="revision-tecnica">
+                                            <label class="custom-control-label" for="revision-tecnica">Revisión Técnica / Homologado</label>
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label></label>
+                            </div>                                               
+                            <div class="col-5 form-group mt-3">                                    
+                                <select class="custom-select">
+                                    <option selected>Permiso de Circulación</option>
+                                    <option>Seguro Obligatorio (SOAP)</option>
+                                    <option>Padrón Vehículo</option>
+                                    <option>Revisión Técnica / Homologado</option>
+                                </select>
+                            </div>                        
+                            <div class="col-7 form-group mt-3">                                                       
+                                <input class="form-control col-6" type="file" id="formFileMultiple" multiple accept=".pdf, .doc, .docx">
+                            </div>       
+                            <div class="col-6 form-group mt-3">                                                       
+                                <!-----ES PARAR PODER TENER LA SEPARACIÓN-->                            
+                            </div>        
+                            <div class="col-md-6 d-flex justify-content-end">
+                                <button type="button" class="btn btn-danger btn-lg mb-1 col-5" data-bs-toggle="modal" data-bs-target="#modal-eliminar-vehiculo">
+                                    Eliminar
+                                </button>
+                                <button type="button" class="btn btn-success btn-lg mb-1 col-5 ml-2" data-bs-toggle="modal" data-bs-target="#modal-modificar-vehiculo">
+                                    Modificar
+                                </button>
+                            </div>                                                                                                                    
+                        </div>                
+                    </div>              
+                </div>  
+        
+            </div>
 
         <!------------------------------------------------------------>
-        
-       
-        
+        </div>                            
     </div>
     <!------------------------------------->
     
@@ -320,7 +414,7 @@
         </div>
     </div>
 
-    <!-------------MODAL PARA PREGUNTAR SI DESEA INHABILITAR SU CUENTA----------->
+    <!-------------MODAL PARA PREGUNTAR SI DESEA ELIMINAR EL VEHICULO----------->
     <div class="modal fade" id="modal-eliminar-vehiculo" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content text-center">
@@ -338,7 +432,7 @@
         </div>
     </div>
 
-    <!------------------MODAL PARA AVISAR QUE SU CUENTA FUE DESHABILITADA---------------------->
+    <!------------------MODAL PARA AVISAR QUE SU VEHICULO FUE ELIMINADO---------------------->
     <div class="modal fade" id="modal-aviso-eliminacionVehi" tabindex="-1" aria-labelledby="modal-avisoLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content text-center">
@@ -372,7 +466,7 @@
     <!--SCRIPT DE BOTON PARA CERRAR SESIÓN-->
     <script>
         document.getElementById('btnCerrarSesion').addEventListener('click', function () {
-            window.location.href = 'index.html';
+            window.location.href = 'Inicio_de_sesión.html';
         });
     </script>
 
@@ -395,21 +489,30 @@
     <script>
         // Obtiene el botón "Añadir" por su ID
         var botonAnadir = document.getElementById("boton-anadir-vehiculo");
-    
+
         // Obtiene el contenedor de ejemplo original por su ID
         var contenedorEjemploOriginal = document.getElementById("contenedor-ejemplo");
-    
+
         // Agrega un evento de clic al botón "Añadir"
         botonAnadir.addEventListener("click", function () {
             // Clona el contenedor de ejemplo original
             var contenedorClonado = contenedorEjemploOriginal.cloneNode(true);
-    
+
             // Quita la clase "d-none" para mostrar el contenedor clonado
             contenedorClonado.classList.remove("d-none");
-    
+
             // Agrega el contenedor clonado al final de la sección
             contenedorEjemploOriginal.parentNode.appendChild(contenedorClonado);
+
+            // Mueve el botón "Añadir" al final de la sección
+            contenedorEjemploOriginal.parentNode.appendChild(botonAnadir);
+
+            // Quita la clase "ml-2" y agrega "mr-2" al botón para alinear a la derecha
+            botonAnadir.classList.remove("ml-2");
+            botonAnadir.classList.add("mr-2");
+
         });
+
     </script>
     
 

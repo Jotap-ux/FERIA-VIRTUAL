@@ -9759,7 +9759,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .color-links:hover {
-  color: #117a8b; /* Cambia el color cuando se pasa el ratón sobre el enlace, si lo deseas */
+  color: var(--gray-dark); /* Cambia el color cuando se pasa el ratón sobre el enlace, si lo deseas */
 }
 
 .estilo-iconos{
@@ -9771,4 +9771,40 @@ a.text-dark:hover, a.text-dark:focus {
 
 .borde-rojo{
   border-radius: var(--red);
+}
+
+/*LINEAS DE SEPARACION DATOS DE LA SUBASTA */
+
+.info-div {
+  border-bottom: 1px solid #ccc; /* Añade un borde inferior */
+  padding-bottom: 5px; /* Espacio entre el texto y el borde */
+  margin-bottom: 5px; /* Espacio entre los divs */
+}
+
+/* ESTILOS PARA EL MENSAJE DE PREVISUALIZACIÓN ORIGEN Y DESTINO TRANSPORTE */
+.custom-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: var(--gray-dark);
+  color: white; /* Cambia el color de texto según tus preferencias */
+  font-size: 20px; /* Tamaño de fuente personalizado */
+  padding: 15px; /* Espacio alrededor del texto */
+  border-radius: 4px; /* Bordes redondeados */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Coloca el tooltip arriba del enlace */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.custom-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
