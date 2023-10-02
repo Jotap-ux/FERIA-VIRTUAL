@@ -9768,3 +9768,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 40px;
   height: 40px;
 }
+
+.borde-rojo{
+  border-radius: var(--red);
+}
